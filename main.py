@@ -1,18 +1,20 @@
-# from cpf_cnpj import Documento
-
-# exemplo_cpf = "41615907840"
-# exemplo_cnpj = "35379838000112"
-
-# cpf_um = Documento.cria_documento(exemplo_cpf)
-# cnpj_um = Documento.cria_documento(exemplo_cnpj)
-
-# print(f'''
-# CPF: {cpf_um}
-# CNPJ: {cnpj_um}
-# ''')
-
+from cpf_cnpj import Documento
 from TelefonesBr import TelefonesBr
+from datasbr import DatasBr
+from datetime import datetime
 
-telefone = "5511947430725"
+exemplo_cpf = "94561576010"
+exemplo_cnpj = "35379838000112"
+telefone = "11976453329"
 
-telefone_objeto = TelefonesBr(telefone)
+cpf_um = Documento.cria_documento(exemplo_cpf)
+cnpj_um = Documento.cria_documento(exemplo_cnpj)
+telefone_um = TelefonesBr(telefone)
+hora_cadastro = DatasBr()
+
+print(f'''
+CPF: {cpf_um}
+CNPJ: {cnpj_um}
+Telefone: {telefone_um}'
+Hora do Cadastro: {hora_cadastro}
+''')
