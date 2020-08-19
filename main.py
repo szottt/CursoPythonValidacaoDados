@@ -1,10 +1,18 @@
-# from Cpf import Cpf
-from validate_docbr import CPF
+# from cpf_cnpj import Documento
 
-cpf2 = "41615907840"
-# objeto_cpf = Cpf(cpf)
-cpf = CPF()
-print(cpf.validate(cpf2))
+# exemplo_cpf = "41615907840"
+# exemplo_cnpj = "35379838000112"
 
+# cpf_um = Documento.cria_documento(exemplo_cpf)
+# cnpj_um = Documento.cria_documento(exemplo_cnpj)
 
-# print(objeto_cpf)
+# print(f'''
+# CPF: {cpf_um}
+# CNPJ: {cnpj_um}
+# ''')
+
+from TelefonesBr import TelefonesBr
+
+telefone = "5511947430725"
+
+telefone_objeto = TelefonesBr(telefone)
